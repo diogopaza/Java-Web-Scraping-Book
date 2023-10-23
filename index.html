@@ -9,13 +9,32 @@
     <h1>Java Web Scraping</h1>
     <h2>Testes com Nodes</h2>
 
-    <p>Price : 19.99$</p>
-    <p>Price : 25.18$</p>
-    <p>Price : 30.00$</p>
+    <p id="preco1">19.99</p>
+    <p id="preco2">Price : 25.18$</p>
+    <p id="preco3">Price : 30.00$</p>
 
-    <!-- retorna todos os nos do Dom -->
+    <!-- retorna todos os nos do Dom 
     <script src="./js/retornaTodosNosDom.js"></script>
-    
+    -->
+    <script>
+       /* var xhttp = new XMLHttpRequest();
+        console.log(this.readyState );
+        xhttp.onreadystatechange = function() {            
+            if(this.readyState == 4 && this.status == 200){
+                console.log("entrei no if");
+                showResult(xttp.responseXML);
+            }
+        }
+
+        xhttp.open("GET", "file://D:/estudos-diogo/Java-Web-Scraping-Book/prices.txt", true);
+        xhttp.send();*/ 
+        var myRegex = document.getElementById("preco1").innerText;
+        console.log(myRegex);
+        var result = /^\d{2}.\d{2}/.test(myRegex);
+        console.log(result);   
+
+
+    </script>
 </body>
 </html>
 
