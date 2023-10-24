@@ -1,5 +1,10 @@
 # Java-Web-Scraping-Book
 
+<h3>Expressoes Regulares</h3>
+<ul>
+<li><strong>/padrao/</strong> sintaxe para criacao de uma expressao regular no Javascript, dentro das barra a palavra 'padrao' deve ser subistituida pela expressao regular real.</li>
+</ul>
+
 <ul>
     <li><strong>document.head.childNodes.length </strong> retorna o total de nos do DOM;</li>
     <li><strong>document.head.childNodes.length </strong> retorn o total de nos do DOM;</li>
