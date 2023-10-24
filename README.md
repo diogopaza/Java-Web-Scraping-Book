@@ -4,6 +4,7 @@
 <ul>
 <li><strong>/padrao/</strong> sintaxe para criacao de uma expressao regular no Javascript, dentro das barra a palavra 'padrao' deve ser subistituida pela expressao regular real.</li>
 </ul>
+<p><strong>match(), search(), replace(), split() e outros metodos aceitam expressoes regulares.</strong></p>
 
 <ul>
     <li><strong>document.head.childNodes.length </strong> retorna o total de nos do DOM;</li>
