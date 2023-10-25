@@ -17,5 +17,5 @@
 <p>Pagina 23 do livro contém uma tabela com o padrão para o uso de expressoes regulares</p>
 <p>Campo preco conforme definido na página 24 do livro.</p>
 
-
+1-Obter os titulos, numero de comentarios, numero de votos positivos com base na pagina <a href="https://news.ycombinator.com">ycombinator</a>.<br><br>
 
