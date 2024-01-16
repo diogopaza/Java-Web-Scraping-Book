@@ -6,12 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Java Web Scraping</h1>
+    <h1 id="titulo">Java 2 Web Scraping</h1>
     <h2>Testes com Nodes</h2>
 
-    <p id="preco1">19.99</p>
-    <p id="preco2">Price : 25.18$</p>
-    <p id="preco3">Price : 30.00$</p>
+    <p id="preco1">Price : 19.99$ - Ar Condicionado</p>
+    <p id="preco2">Price : 25.18$ - Geladeira</p>
+    <p id="preco3">Price : 30.00$ - Batedeira</p>
 
     <!-- retorna todos os nos do Dom 
     <script src="./js/retornaTodosNosDom.js"></script>
@@ -25,13 +25,31 @@
                 showResult(xttp.responseXML);
             }
         }
-
+.
         xhttp.open("GET", "file://D:/estudos-diogo/Java-Web-Scraping-Book/prices.txt", true);
         xhttp.send();*/ 
-        var myRegex = document.getElementById("preco1").innerText;
-        console.log(myRegex);
-        var result = /^\d{2}.\d{2}/.test(myRegex);
+        var textoPreco1 = document.getElementById("preco1").innerText;
+        var titulo = document.getElementById("titulo").innerText;
+        console.log(textoPreco1);
+        var result = /^\d{2}.\d{2}\$/.test(textoPreco1);
         console.log(result);   
+
+        tituloRegex = /Java/
+        console.log("test() = " + tituloRegex.test(titulo));
+        console.log("match = " + titulo.match(tituloRegex));
+
+        const valorEntrada = document.getElementById("preco1").innerText;
+        encontrarValor(valorEntrada, "19.99")
+
+        function encontrarValor(valorEntrada, valorBuscado){
+            console.log(valorEntrada);
+            console.log(valorBuscado);            
+            //myRegex = /*new RegExp(valorBuscado)*/ /19.99\$/;    
+            myRegex = new RegExp(valorBuscado);       
+            var response = myRegex.test(valorEntrada) ? "A string - " + valorBuscado + " foi encontrada" : 
+                                                        "String não localizada pela REGEX";
+            console.log(response);                                            
+        }
 
 
     </script>
