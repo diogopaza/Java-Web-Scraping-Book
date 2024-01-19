@@ -9,13 +9,11 @@
     <li><strong>document.head.childNodes.length </strong> retorn o total de nos do DOM;</li>
 </ul>
 
-
-
-
-1-Extrair com o uso de expressao regular todos os valores (Price) presentes na página HTML.<br><br>
+1-Extrair com o uso de expressao regular todos os valores (Price) presentes na página HTML e ao final retornar o somátorio destes.<br><br>
 <img src="./img/fig_01.png" width="300px" height="300px">
 <p>Pagina 23 do livro contém uma tabela com o padrão para o uso de expressoes regulares</p>
 <p>Campo preco conforme definido na página 24 do livro.</p>
+<p><strong>Resolução na pasta exercicio 1.</strong></p>
 
 2- Obter os titulos, numero de comentarios, numero de votos positivos com base na pagina <a href="https://news.ycombinator.com">ycombinator</a>.<br><br>
 

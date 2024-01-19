@@ -30,13 +30,13 @@
         xhttp.send();*/ 
         var textoPreco1 = document.getElementById("preco1").innerText;
         var titulo = document.getElementById("titulo").innerText;
-        console.log(textoPreco1);
+        //console.log(textoPreco1);
         var result = /^\d{2}.\d{2}\$/.test(textoPreco1);
-        console.log(result);   
+        //console.log(result);   
 
         tituloRegex = /Java/
-        console.log("test() = " + tituloRegex.test(titulo));
-        console.log("match = " + titulo.match(tituloRegex));
+        //console.log("test() = " + tituloRegex.test(titulo));
+        //console.log("match = " + titulo.match(tituloRegex));
 
         const valorEntrada = document.getElementById("preco1").innerText;
         encontrarValor(valorEntrada, "19.99")

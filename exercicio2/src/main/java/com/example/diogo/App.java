@@ -33,7 +33,7 @@ public class App {
             System.out.println("Executando: " + page.getTitleText());
             System.out.println("**************************");
             DomElement table = page.getElementById("hnmain");
-            System.out.println("DOM: " + table.getBodi );
+            System.out.println("DOM: " + table);
                 
             
         }
